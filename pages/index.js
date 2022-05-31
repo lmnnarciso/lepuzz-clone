@@ -372,8 +372,93 @@ export default function Home() {
           </div>
         </div>
       </div>
+      {/* footer */}
       <div className="pt-32 px-4 md:px-8 lg:px-24 pb-24 bg-yellow-400">
-        <footer></footer>
+        <section className="font-sans text-center">
+          <p
+            style={{ WebkitTextStroke: "1px" }}
+            className="text-[24px] scale-y-[1.3] mb-24"
+          >
+            We would like to thank our friends at <span>Little Troop</span> and{" "}
+            <span>Ops Shop</span> for helping us get off the ground — Noemie,
+            Jeremy and Lisa we could not have done this without you.
+          </p>
+          <p
+            class="text-[30px] lg:text-[42px] scale-y-[1.5] font-helvetica font-thin"
+            style={{ WebkitTextStroke: "2px", WebkitTextSizeAdjust: "100%" }}
+          >
+            <span>We hope you love Le Puzz as much as we do!</span>
+          </p>
+        </section>
+        <div>
+          <footer className="grid grid-cols-12 pt-16">
+            <div className="col-span-12 lg:col-span-2 px-64 lg:px-0">
+              <a>
+                <img src="/images/lepuzz-logo-animated.svg" />
+              </a>
+              <img className="pt-12" src="/images/footer-slogan.svg" />
+            </div>
+            <div className="col-span-1 my-10"></div>
+            <div className="col-span-12 lg:col-span-9 relative">
+              <form className="lg:w-10/12 h-[200px] absolute top-[40px] md:top-[65px] lg:top-[55px]  left-4">
+                <div className="flex ">
+                  <input className="text-[18px] bg-[#c8cacb] w-full"></input>
+                  <button className="bg-[url('/images/arrow.svg')] bg-contain h-[50px] w-[50px] lg:w-[75px]" />
+                </div>
+              </form>
+              <img src="/images/bg_email@2x.webp" />
+              <p
+                style={{ WebkitTextStroke: "1px" }}
+                className="md:hidden font-thin font-helvetica text-center text-[11px] leading-[18px] tracking-[0.9px] scale-y-[1.2] pt-12"
+              >
+                If you are satisfied with our puzzle please tell your friends.
+                <br />
+                If not please tell us at <a href="mailto:#">hey@lepuzz.com</a>
+              </p>
+              <nav
+                className="grid grid-cols-4 grid-rows-[auto auto] lg:flex justify-between pr-[30px] my-[60px] leading-[1.15] text-center"
+                style={{ WebkitTextSizeAdjust: "100%" }}
+              >
+                <a
+                  href="#"
+                  className="border-2 border-black lg:border-none pt-[10px] mb-4 pb-[16px] text-[18px] scale-y-[1.3] tracking-[1px] font-thin font-helvetica "
+                >
+                  <span>About</span>
+                </a>
+                <a
+                  href="#"
+                  className="border-2 border-black lg:border-none pt-[10px] mb-4 pb-[16px] text-[18px] scale-y-[1.3] tracking-[1px] font-thin font-helvetica "
+                >
+                  <span>Press</span>
+                </a>
+                <a
+                  href="#"
+                  className="border-2 border-black lg:border-none pt-[10px] mb-4 pb-[16px] text-[18px] scale-y-[1.3] tracking-[1px] font-thin font-helvetica "
+                >
+                  <span>FAQ</span>
+                </a>
+                <a
+                  href="#"
+                  className="border-2 border-black lg:border-none pt-[10px] mb-4 pb-[16px] text-[18px] scale-y-[1.3] tracking-[1px] font-thin font-helvetica "
+                >
+                  <span>Contact</span>
+                </a>
+                <a
+                  href="#"
+                  className="border-2 border-black lg:border-none pt-[10px] mb-4 pb-[16px] col-span-2 text-[18px] scale-y-[1.3] tracking-[1px] font-thin font-helvetica "
+                >
+                  <span>Shipping &amp; Returns</span>
+                </a>
+                <a
+                  href="#"
+                  className="border-2 border-black lg:border-none pt-[10px] mb-4 pb-[8px] col-span-2 text-[18px] scale-y-[1.3] tracking-[1px] font-thin font-helvetica "
+                >
+                  <span>Wholesale</span>
+                </a>
+              </nav>
+            </div>
+          </footer>
+        </div>
       </div>
     </>
   );

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90.0635 48.7179">
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <g>
+        <g>
+          <path d="M65.8136,47.7179a23.25,23.25,0,0,1,23.25-23.25" style="fill: none;stroke: #231f20;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2px"/>
+          <path d="M65.8136,1a23.25,23.25,0,0,0,23.25,23.25" style="fill: none;stroke: #231f20;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2px"/>
+        </g>
+        <line x1="1" y1="24.3589" x2="88.4273" y2="24.3589" style="fill: none;stroke: #231f20;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2px"/>
+      </g>
+    </g>
+  </g>
+</svg>
