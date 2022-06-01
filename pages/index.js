@@ -1,7 +1,8 @@
+import Image from "next/image";
 const LePuzzHeaderLogo = () => {
   return (
     <svg
-      class="page-logo"
+      className="page-logo"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 1278.7009 196.2947"
     >
@@ -114,12 +115,12 @@ export default function Home() {
                 <path d="M227.8 40.6c0 5.2 7.1 9.5 15.9 9.5s16-4.2 16-9.5c0-5.2-7.1-9.5-15.9-9.5C235 31.2 227.8 35.4 227.8 40.6z"></path>
                 <path d="M196.5 42.8c4.6 0 8.2-3.7 8.3-8.2 0-4.5-3.6-8.2-8.2-8.2 0 0 0 0 0 0 -4.6 0-8.2 3.7-8.3 8.2C188.3 39.1 192 42.8 196.5 42.8 196.5 42.8 196.5 42.8 196.5 42.8z"></path>
                 <path
-                  class="eye eye-left"
+                  className="eye eye-left"
                   d="M173.2 13.7c-0.1-7.5-6.2-13.5-13.6-13.5 0 0 0 0-0.1 0 -7.5 0-13.5 6.1-13.5 13.6 0 0 0 0 0 0 0.1 7.5 6.2 13.5 13.6 13.5 0 0 0 0 0.1 0C167.1 27.3 173.2 21.2 173.2 13.7 173.2 13.8 173.2 13.7 173.2 13.7zM169.6 15.3L169.6 15.3c-0.3-0.1-0.6-0.3-0.7-0.6 -1.6-3.1-5.3-5.1-9.4-5.1 -3.7 0-7.1 1.8-9.2 4.9 -0.1 0.1-0.2 0.3-0.3 0.4 -0.1 0.3-0.4 0.4-0.8 0.4 -0.2-0.1-0.3-0.3-0.3-0.6 0 0 0-0.1 0-0.1l0-0.4c0-0.1 0-0.3 0-0.4 0.4-5.8 5.4-10.2 11.3-9.8 5.5 0.4 9.8 4.9 9.8 10.4l0 0C170.2 14.8 170 15.1 169.6 15.3L169.6 15.3z"
                   style={{ transform: "rotate(0deg)" }}
                 ></path>
                 <path
-                  class="eye eye-right"
+                  className="eye eye-right"
                   d="M247.3 14c0.1-7.5-5.9-13.6-13.4-13.7 0 0 0 0-0.1 0 -7.5-0.1-13.6 5.9-13.8 13.4 0 0 0 0 0 0 -0.1 7.5 5.9 13.6 13.4 13.8 0 0 0 0 0.1 0C241.1 27.5 247.2 21.5 247.3 14 247.3 14 247.3 14 247.3 14zM243.8 15.5L243.8 15.5c-0.3-0.1-0.6-0.3-0.7-0.6 -1.5-3.1-5.2-5.2-9.3-5.2 -3.7-0.1-7.2 1.7-9.3 4.7 -0.1 0.1-0.2 0.3-0.3 0.4 -0.2 0.3-0.5 0.4-0.8 0.4 -0.2-0.1-0.3-0.3-0.3-0.6 0 0 0-0.1 0-0.1l0-0.4c0-0.1 0-0.3 0-0.4 0.5-5.8 5.6-10.1 11.4-9.6 5.5 0.5 9.7 5.1 9.7 10.6l0 0C244.3 15 244.1 15.3 243.8 15.5L243.8 15.5z"
                   // style="transform: rotate(0deg);"
                   style={{ transform: "rotate(0deg)" }}
@@ -174,7 +175,7 @@ export default function Home() {
                 style={{ WebkitTextStroke: "3px" }}
               >
                 Hey, Welcome to the <i>Wonderfully</i> Weirdo World of{" "}
-                <span class="sr-only">Le Puzz</span>
+                <span className="sr-only">Le Puzz</span>
               </h1>
               <LePuzzHeaderLogo />
               <p
@@ -194,7 +195,7 @@ export default function Home() {
           <div className="grid grid-cols-12 gap-8">
             <div className="col-span-12 lg:col-span-3">
               <div className="bg-gray-400 p-4 rounded-2xl">
-                <img
+                <Image
                   className="rounded-lg"
                   src="/images/LePuzz_SHOT_36_018.webp"
                 />
@@ -202,16 +203,16 @@ export default function Home() {
                   className="text-[18px] tracking-[0.75px] py-16 md:py-40 scale-y-[1.4] px-2"
                   style={{ WebkitTextStroke: "1.3px" }}
                 >
-                  We love old puzzle box illustrations, silly copy, weird jigsaw
-                  shapes and of course interesting images. There really isn't
-                  anything like that feeling of finishing a puzzle and running
-                  your hand over it, then trying to pick it up off the table in
-                  one piece.
+                  {`We love old puzzle box illustrations, silly copy, weird jigsaw
+                  shapes and of course interesting images. There really
+                  isn't anything like that feeling of finishing a puzzle
+                  and running your hand over it, then trying to pick it up off
+                  the table in one piece.`}
                   <br />
                   <br />
-                  We started Le Puzz with all of this in mind and set out to
+                  {`We started Le Puzz with all of this in mind and set out to
                   create a puzzle experience that we thought was fun and we hope
-                  you enjoy as well.
+                  you enjoy as well.`}
                 </p>
               </div>
             </div>
@@ -220,15 +221,15 @@ export default function Home() {
                 style={{ WebkitTextStroke: "1px" }}
                 className="text-center text-[19px] font-sans scale-y-[1.4] font-bold leading-0 my-4"
               >
-                We love trading puzzles when we're done!
+                {`We love trading puzzles when we're done!`}
               </p>
-              <img src="/images/34Asset_7321.webp" />
+              <Image src="/images/34Asset_7321.webp" />
               <p
                 className="pt-16 font-helvetica leading-[0.9] tracking-[-2px] text-[60px] scale-y-150 text-center"
                 style={{ WebkitTextStroke: "2px" }}
               >
-                Join us as we get lost, zone out, look for edge pieces,
-                meditate, laugh, focus and hopefully find our inner piece.
+                {`Join us as we get lost, zone out, look for edge pieces,
+                meditate, laugh, focus and hopefully find our inner piece.`}
               </p>
             </div>
           </div>
@@ -238,30 +239,30 @@ export default function Home() {
           <div className="grid grid-cols-12 ">
             <div className="col-span-12 lg:col-span-5 flex flex-col">
               <div className="text-center">
-                <img src="/images/210520_LePuzz_Stickers_Pieces_Front.webp" />
+                <Image src="/images/210520_LePuzz_Stickers_Pieces_Front.webp" />
                 <h2
                   style={{ WebkitTextStroke: "1.3px" }}
                   className="text-center scale-x-[1.3] mb-16 text-[20px] leading-5 tracking-[1px] font-helvetica uppercase font-thin"
                 >
-                  What Are <br />
-                  “Random-cut” pieces?
+                  {`What Are`} <br />
+                  {`“Random-cut” pieces?`}
                 </h2>
                 <p
                   style={{ WebkitTextStroke: "1.3px" }}
                   className="text-[13px] md:text-[17px] font-helvetica scale-y-[1.4] text-center font-thin tracking-[0.75px] leading-[1.15]"
                 >
-                  Most puzzles are either ribbon cut or random cut. A ribbon-cut
+                  {`Most puzzles are either ribbon cut or random cut. A ribbon-cut
                   puzzle is cut in a fairly even grid with a few different piece
                   shapes. Random cut puzzles look like a tangle of vines with
-                  pieces darting off in all directions.
+                  pieces darting off in all directions.`}
                   <br />
                   <br />
-                  We enjoy a challenge and we wanted to make sure that each of
-                  our puzzle pieces were truly unique shapes.
+                  {`We enjoy a challenge and we wanted to make sure that each of
+                  our puzzle pieces were truly unique shapes.`}
                 </p>
               </div>
               <div className="text-center mt-48">
-                <img src="/images/Earth-Friendly.webp" />
+                <Image src="/images/Earth-Friendly.webp" />
                 <h2
                   style={{ WebkitTextStroke: "2px" }}
                   className="scale-y-[1.8] mt-16 mb-24 text-[80px] leading-5 tracking-[-2px] font-sans font-thin"
@@ -272,46 +273,46 @@ export default function Home() {
                   style={{ WebkitTextStroke: "1.3px" }}
                   className="text-[13px] md:text-[17px] font-helvetica scale-y-[1.4] text-center font-thin tracking-[0.75px] leading-[1.15]"
                 >
-                  Another thing we love about puzzles is that they are mostly
+                  {`Another thing we love about puzzles is that they are mostly
                   paper product. We try to limit the amount of plastic that we
                   use in both the production and distribution of each puzzle. We
                   use FSC-approved paper sources for our puzzles which means all
                   of the paper we use comes from sustainable forests. We have
                   also provided a resealable bag that can be used again and
-                  again.
+                  again.`}
                 </p>
               </div>
             </div>
             <div className="col-span-2"></div>
             <div className="pt-56 col-span-12 lg:col-span-5 flex flex-col">
               <div className="text-center">
-                <img src="/images/Thick-pieces.webp" />
+                <Image src="/images/Thick-pieces.webp" />
                 <h2
                   style={{ WebkitTextStroke: "1.3px" }}
                   className="text-center scale-x-[1.3] mb-16 text-[20px] leading-5 tracking-[1px] font-helvetica uppercase font-thin"
                 >
-                  "EXTRA-THICK" PIECES
+                  {`"EXTRA-THICK" PIECES`}
                 </h2>
                 <p
                   style={{ WebkitTextStroke: "1.3px" }}
                   className="text-[13px] md:text-[17px] font-helvetica scale-y-[1.4] text-center font-thin tracking-[0.75px] leading-[1.15]"
                 >
-                  There is nothing more frustrating than a thin, flimsy puzzle
+                  {`There is nothing more frustrating than a thin, flimsy puzzle
                   that won't stay together while you’re working on it. Together
                   with our manufacturer, we developed an extra thick 500 piece
                   puzzle that is reminiscent of some of our favorite vintage
-                  puzzle finds.
+                  puzzle finds.`}
                   <br />
                   <br />
-                  The pieces fit snug and (although we can't guarantee it) we
+                  {`The pieces fit snug and (although we can't guarantee it) we
                   hope that you will be able to pick up the puzzle in one piece
                   once it is completed, making it easy to transport or flip over
                   and frame. We hope to bring this level of thickness to our
-                  1000 piece puzzles soon.
+                  1000 piece puzzles soon.`}
                 </p>
               </div>
               <div className="text-center mt-40">
-                <img src="/images/Asset_50_2x.webp" />
+                <Image src="/images/Asset_50_2x.webp" />
                 <h2
                   style={{ WebkitTextStroke: "2px" }}
                   className="scale-y-[1.8] mt-16 mb-24 text-[80px] leading-5 tracking-[-2px] font-sans font-thin"
@@ -322,8 +323,8 @@ export default function Home() {
                   style={{ WebkitTextStroke: "1.3px" }}
                   className="text-[13px] md:text-[17px] font-helvetica scale-y-[1.4] text-center font-thin tracking-[0.75px] leading-[1.15]"
                 >
-                  For every puzzle that we sell through our website Le Puzz will
-                  donate $1 to the Boys & Girls Club of America.
+                  {`For every puzzle that we sell through our website Le Puzz will
+                  donate $1 to the Boys & Girls Club of America.`}
                 </p>
               </div>
             </div>
@@ -339,12 +340,12 @@ export default function Home() {
           Who We Are
         </h3>
         <p className="my-20 text-[55px] scale-y-[1.6] font-sans leading-[0.9]">
-          We're Alistair Matthews and Michael Hunter, just two silly friends
-          trying to make something fun.
+          {`We're Alistair Matthews and Michael Hunter, just two silly friends
+          trying to make something fun.`}
         </p>
         <div className="grid grid-cols-12">
           <div className="col-span-12 lg:col-span-5">
-            <img
+            <Image
               className="rounded-t-full"
               src="/images/210616_AboutUsShoot_225.webp"
             />
@@ -358,7 +359,7 @@ export default function Home() {
           </div>
           <div className="col-span-2 my-8" />
           <div className="col-span-12 lg:col-span-5">
-            <img
+            <Image
               className="rounded-t-full"
               src="/images/210616_AboutUsShoot_225-_12.webp"
             />
@@ -384,7 +385,7 @@ export default function Home() {
             Jeremy and Lisa we could not have done this without you.
           </p>
           <p
-            class="text-[30px] lg:text-[42px] scale-y-[1.5] font-helvetica font-thin"
+            className="text-[30px] lg:text-[42px] scale-y-[1.5] font-helvetica font-thin"
             style={{ WebkitTextStroke: "2px", WebkitTextSizeAdjust: "100%" }}
           >
             <span>We hope you love Le Puzz as much as we do!</span>
@@ -394,9 +395,9 @@ export default function Home() {
           <footer className="grid grid-cols-12 pt-16">
             <div className="col-span-12 lg:col-span-2 px-64 lg:px-0">
               <a>
-                <img src="/images/lepuzz-logo-animated.svg" />
+                <Image src="/images/lepuzz-logo-animated.svg" />
               </a>
-              <img className="pt-12" src="/images/footer-slogan.svg" />
+              <Image className="pt-12" src="/images/footer-slogan.svg" />
             </div>
             <div className="col-span-1 my-10"></div>
             <div className="col-span-12 lg:col-span-9 relative">
@@ -406,7 +407,7 @@ export default function Home() {
                   <button className="bg-[url('/images/arrow.svg')] bg-contain h-[50px] w-[50px] lg:w-[75px]" />
                 </div>
               </form>
-              <img src="/images/bg_email@2x.webp" />
+              <Image src="/images/bg_email@2x.webp" />
               <p
                 style={{ WebkitTextStroke: "1px" }}
                 className="md:hidden font-thin font-helvetica text-center text-[11px] leading-[18px] tracking-[0.9px] scale-y-[1.2] pt-12"
@@ -447,7 +448,7 @@ export default function Home() {
                   href="#"
                   className="border-2 border-black lg:border-none pt-[10px] mb-4 pb-[16px] col-span-2 text-[18px] scale-y-[1.3] tracking-[1px] font-thin font-helvetica "
                 >
-                  <span>Shipping &amp; Returns</span>
+                  <span>Shipping & Returns</span>
                 </a>
                 <a
                   href="#"
