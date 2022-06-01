@@ -1,4 +1,15 @@
 import Image from "next/image";
+import lepuzzShot from "../public/images/LePuzz_SHOT_36_018.webp";
+import asset34 from "../public/images/34Asset_7321.webp";
+import lepuzzSticker from "../public/images/210520_LePuzz_Stickers_Pieces_Front.webp";
+import earthFriendly from "../public/images/Earth-Friendly.webp";
+import thickPieces from "../public/images/Thick-pieces.webp";
+import asset50 from "../public/images/Asset_50_2x.webp";
+import aboutUs from "../public/images/210616_AboutUsShoot_225.webp";
+import aboutUsV2 from "../public/images/210616_AboutUsShoot_225-_12.webp";
+import lepuzzAnimatedLogo from "../public/images/lepuzz-logo-animated.svg";
+import footerLogan from "../public/images/footer-slogan.svg";
+import bgEmail from "../public/images/bg_email@2x.webp";
 const LePuzzHeaderLogo = () => {
   return (
     <svg
@@ -195,10 +206,7 @@ export default function Home() {
           <div className="grid grid-cols-12 gap-8">
             <div className="col-span-12 lg:col-span-3">
               <div className="bg-gray-400 p-4 rounded-2xl">
-                <Image
-                  className="rounded-lg"
-                  src="/images/LePuzz_SHOT_36_018.webp"
-                />
+                <Image className="rounded-lg" src={lepuzzShot} />
                 <p
                   className="text-[18px] tracking-[0.75px] py-16 md:py-40 scale-y-[1.4] px-2"
                   style={{ WebkitTextStroke: "1.3px" }}
@@ -223,7 +231,7 @@ export default function Home() {
               >
                 {`We love trading puzzles when we're done!`}
               </p>
-              <Image src="/images/34Asset_7321.webp" />
+              <Image src={asset34} />
               <p
                 className="pt-16 font-helvetica leading-[0.9] tracking-[-2px] text-[60px] scale-y-150 text-center"
                 style={{ WebkitTextStroke: "2px" }}
@@ -239,7 +247,7 @@ export default function Home() {
           <div className="grid grid-cols-12 ">
             <div className="col-span-12 lg:col-span-5 flex flex-col">
               <div className="text-center">
-                <Image src="/images/210520_LePuzz_Stickers_Pieces_Front.webp" />
+                <Image src={lepuzzSticker} />
                 <h2
                   style={{ WebkitTextStroke: "1.3px" }}
                   className="text-center scale-x-[1.3] mb-16 text-[20px] leading-5 tracking-[1px] font-helvetica uppercase font-thin"
@@ -262,7 +270,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="text-center mt-48">
-                <Image src="/images/Earth-Friendly.webp" />
+                <Image src={earthFriendly} />
                 <h2
                   style={{ WebkitTextStroke: "2px" }}
                   className="scale-y-[1.8] mt-16 mb-24 text-[80px] leading-5 tracking-[-2px] font-sans font-thin"
@@ -286,7 +294,7 @@ export default function Home() {
             <div className="col-span-2"></div>
             <div className="pt-56 col-span-12 lg:col-span-5 flex flex-col">
               <div className="text-center">
-                <Image src="/images/Thick-pieces.webp" />
+                <Image src={thickPieces} />
                 <h2
                   style={{ WebkitTextStroke: "1.3px" }}
                   className="text-center scale-x-[1.3] mb-16 text-[20px] leading-5 tracking-[1px] font-helvetica uppercase font-thin"
@@ -312,7 +320,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="text-center mt-40">
-                <Image src="/images/Asset_50_2x.webp" />
+                <Image src={asset50} />
                 <h2
                   style={{ WebkitTextStroke: "2px" }}
                   className="scale-y-[1.8] mt-16 mb-24 text-[80px] leading-5 tracking-[-2px] font-sans font-thin"
@@ -345,10 +353,7 @@ export default function Home() {
         </p>
         <div className="grid grid-cols-12">
           <div className="col-span-12 lg:col-span-5">
-            <Image
-              className="rounded-t-full"
-              src="/images/210616_AboutUsShoot_225.webp"
-            />
+            <Image className="rounded-t-full" src={aboutUs} />
             <p
               className="text-[24px] scale-y-[1.3] pt-8"
               style={{ WebkitTextStroke: "1px" }}
@@ -359,10 +364,7 @@ export default function Home() {
           </div>
           <div className="col-span-2 my-8" />
           <div className="col-span-12 lg:col-span-5">
-            <Image
-              className="rounded-t-full"
-              src="/images/210616_AboutUsShoot_225-_12.webp"
-            />
+            <Image className="rounded-t-full" src={aboutUsV2} />
             <p
               className="text-[24px] scale-y-[1.3] pt-8"
               style={{ WebkitTextStroke: "1px" }}
@@ -395,9 +397,9 @@ export default function Home() {
           <footer className="grid grid-cols-12 pt-16">
             <div className="col-span-12 lg:col-span-2 px-64 lg:px-0">
               <a>
-                <Image src="/images/lepuzz-logo-animated.svg" />
+                <Image src={lepuzzAnimatedLogo} />
               </a>
-              <Image className="pt-12" src="/images/footer-slogan.svg" />
+              <Image className="pt-12" src={footerLogan} />
             </div>
             <div className="col-span-1 my-10"></div>
             <div className="col-span-12 lg:col-span-9 relative">
@@ -407,7 +409,7 @@ export default function Home() {
                   <button className="bg-[url('/images/arrow.svg')] bg-contain h-[50px] w-[50px] lg:w-[75px]" />
                 </div>
               </form>
-              <Image src="/images/bg_email@2x.webp" />
+              <Image src={bgEmail} />
               <p
                 style={{ WebkitTextStroke: "1px" }}
                 className="md:hidden font-thin font-helvetica text-center text-[11px] leading-[18px] tracking-[0.9px] scale-y-[1.2] pt-12"
